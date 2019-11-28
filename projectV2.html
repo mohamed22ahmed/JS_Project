@@ -98,7 +98,13 @@
                     jsonstr = JSON.stringify(json2);
                     localStorage.setItem('button_click',jsonstr);
                 }
+				
             });
+			// apply the function mmx that clear the localstorage every 5 seconds.
+			window.setInterval(mmx,5000);
+			function mmx(){
+				localStorage.clear();
+			}
         </script>
     </body>
 </html>
